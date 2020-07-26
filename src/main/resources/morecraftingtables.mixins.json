@@ -1,12 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.p3ng00.morecraftingtables.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-  ],
-  "client": [
-    "ExampleMixin"
+    "CraftingScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

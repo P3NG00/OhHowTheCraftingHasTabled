@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
-    "particle": "p3tweaks:block/jungle_crafting_table_front",
-    "up": "p3tweaks:block/jungle_crafting_table_top",
+    "particle": "morecraftingtables:block/jungle_crafting_table_front",
+    "up": "morecraftingtables:block/jungle_crafting_table_top",
     "down": "minecraft:block/jungle_planks",
-    "north": "p3tweaks:block/jungle_crafting_table_front",
-    "south": "p3tweaks:block/jungle_crafting_table_side",
-    "west": "p3tweaks:block/jungle_crafting_table_front",
-    "east": "p3tweaks:block/jungle_crafting_table_side"
+    "north": "morecraftingtables:block/jungle_crafting_table_front",
+    "south": "morecraftingtables:block/jungle_crafting_table_side",
+    "west": "morecraftingtables:block/jungle_crafting_table_front",
+    "east": "morecraftingtables:block/jungle_crafting_table_side"
   }
 }

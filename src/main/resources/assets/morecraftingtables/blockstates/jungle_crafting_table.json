@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "p3tweaks:block/jungle_crafting_table"
+      "model": "morecraftingtables:block/jungle_crafting_table"
     }
   }
 }

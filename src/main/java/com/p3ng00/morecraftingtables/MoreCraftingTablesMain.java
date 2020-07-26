@@ -3,6 +3,9 @@ package com.p3ng00.morecraftingtables;
 import com.p3ng00.morecraftingtables.block.CraftingTableBlock;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -30,6 +33,8 @@ public class MoreCraftingTablesMain implements ModInitializer {
     }
 
     private void register(Block block, String name) {
-        Registry.register(Registry.BLOCK, new Identifier(MODID, name), block);
+        Identifier id = new Identifier(MODID, name);
+        Registry.register(Registry.BLOCK, id, block);
+        Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(ItemGroup.DECORATIONS)));
     }
 }
