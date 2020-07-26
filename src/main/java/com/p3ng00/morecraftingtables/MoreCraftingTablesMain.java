@@ -11,8 +11,6 @@ import net.minecraft.util.registry.Registry;
 
 public class MoreCraftingTablesMain implements ModInitializer {
 
-    public static final String MODID = "morecraftingtables";
-
     public static final Block SPRUCE_CRAFTING_TABLE = new CraftingTableBlock();
     public static final Block BIRCH_CRAFTING_TABLE = new CraftingTableBlock();
     public static final Block JUNGLE_CRAFTING_TABLE = new CraftingTableBlock();
@@ -33,7 +31,7 @@ public class MoreCraftingTablesMain implements ModInitializer {
     }
 
     private void register(Block block, String name) {
-        Identifier id = new Identifier(MODID, name);
+        Identifier id = new Identifier("morecraftingtables", name);
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(ItemGroup.DECORATIONS)));
     }

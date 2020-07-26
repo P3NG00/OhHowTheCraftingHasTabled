@@ -1,7 +1,6 @@
 package com.p3ng00.morecraftingtables.mixin;
 
 import com.p3ng00.morecraftingtables.MoreCraftingTablesMain;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.CraftingInventory;
