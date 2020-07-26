@@ -1,37 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "morecraftingtables",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "The Rest of the Crafting Tables",
+  "description": "Adding the rest of the Crafting Table variants into the game!",
   "authors": [
-    "Me!"
+    "P3NG00"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/P3NG00/MoreCraftingTables",
+    "issues": "https://github.com/P3NG00/MoreCraftingTables/issues"
   },
-
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "license": "MIT",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.p3ng00.morecraftingtables.MoreCraftingTablesMain"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.9.0",
     "fabric": "*",
     "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
   }
 }
