@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "morecraftingtables",
   "version": "${version}",
-  "name": "The Rest of the Crafting Tables",
+  "name": "Oh, How the Crafting Has Tabled!",
   "description": "Adding the rest of the Crafting Table variants into the game!",
   "authors": [
     "P3NG00"
   ],
   "contact": {
-    "homepage": "",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/oh-how-the-crafting-has-tabled",
     "sources": "https://github.com/P3NG00/MoreCraftingTables",
     "issues": "https://github.com/P3NG00/MoreCraftingTables/issues"
   },
