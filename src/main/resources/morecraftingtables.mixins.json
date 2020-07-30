@@ -4,7 +4,8 @@
   "package": "com.p3ng00.morecraftingtables.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CraftingScreenHandlerMixin"
+    "CraftingScreenHandlerMixin",
+    "RecipeManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
