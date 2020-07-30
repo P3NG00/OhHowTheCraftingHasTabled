@@ -4,3 +4,6 @@ Created
 v0.0.1
 * Fixed title in 'fabric.mod.json'
 * Changed jar file name
+
+v0.1.0
+* Fixed overwriting Crafting Table recipe. Thanks Paulevs!
