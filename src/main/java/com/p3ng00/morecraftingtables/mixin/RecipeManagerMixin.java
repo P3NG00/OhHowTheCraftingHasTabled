@@ -1,11 +1,9 @@
 package com.p3ng00.morecraftingtables.mixin;
 
-import com.google.gson.Gson;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.recipe.RecipeType;
-import net.minecraft.resource.JsonDataLoader;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import net.minecraft.world.World;
@@ -16,16 +14,12 @@ import org.spongepowered.asm.mixin.Shadow;
 import java.util.*;
 
 @Mixin(RecipeManager.class)
-public abstract class RecipeManagerMixin extends JsonDataLoader {
+public abstract class RecipeManagerMixin {
 
     /*
         Credit to Paulevs, creator of the Better Nether mod, for this code to fix my issue.
         (I modified it slightly to match my style of code)
      */
-
-    public RecipeManagerMixin(Gson gson, String dataType) {
-        super(gson, dataType);
-    }
 
     @Shadow
     private <C extends Inventory, T extends Recipe<C>> Map<Identifier, Recipe<C>> getAllOfType(RecipeType<T> type) {
