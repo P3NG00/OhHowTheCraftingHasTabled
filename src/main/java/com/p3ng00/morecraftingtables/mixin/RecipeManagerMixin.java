@@ -39,8 +39,7 @@ public abstract class RecipeManagerMixin extends JsonDataLoader {
         String mc = new Identifier("").getNamespace();
         list.sort((v1, v2) -> {
             boolean b1 = v1.getId().getNamespace().equals(mc);
-            boolean b2 = v2.getId().getNamespace().equals(mc);
-            return (b1 ^ b2) ? (b1 ? 1 : -1) : 0;
+            return (b1 ^ v2.getId().getNamespace().equals(mc)) ? (b1 ? 1 : -1) : 0;
         });
         return list.stream().flatMap((recipe -> Util.stream(type.get(recipe, world, inventory)))).findFirst();
     }
