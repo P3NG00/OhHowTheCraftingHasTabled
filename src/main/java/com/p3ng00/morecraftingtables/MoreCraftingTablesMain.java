@@ -22,19 +22,24 @@ public class MoreCraftingTablesMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        register(SPRUCE_CRAFTING_TABLE, "spruce_crafting_table", true);
-        register(BIRCH_CRAFTING_TABLE, "birch_crafting_table", true);
-        register(JUNGLE_CRAFTING_TABLE, "jungle_crafting_table", true);
-        register(ACACIA_CRAFTING_TABLE, "acacia_crafting_table", true);
-        register(DARK_OAK_CRAFTING_TABLE, "dark_oak_crafting_table", true);
-        register(CRIMSON_CRAFTING_TABLE, "crimson_crafting_table", false);
-        register(WARPED_CRAFTING_TABLE, "warped_crafting_table", false);
+        registerCraftingTable(SPRUCE_CRAFTING_TABLE, "spruce_crafting_table", true);
+        registerCraftingTable(BIRCH_CRAFTING_TABLE, "birch_crafting_table", true);
+        registerCraftingTable(JUNGLE_CRAFTING_TABLE, "jungle_crafting_table", true);
+        registerCraftingTable(ACACIA_CRAFTING_TABLE, "acacia_crafting_table", true);
+        registerCraftingTable(DARK_OAK_CRAFTING_TABLE, "dark_oak_crafting_table", true);
+        registerCraftingTable(CRIMSON_CRAFTING_TABLE, "crimson_crafting_table", false);
+        registerCraftingTable(WARPED_CRAFTING_TABLE, "warped_crafting_table", false);
     }
 
-    private void register(Block block, String name, boolean fuel) {
+    private void registerCraftingTable(Block craftingTable, String name, boolean fuel) {
+
         Identifier id = new Identifier("morecraftingtables", name);
-        Registry.register(Registry.BLOCK, id, block);
-        Registry.register(Registry.ITEM, id, new BlockItem(block, new Item.Settings().group(ItemGroup.DECORATIONS)));
-        if (fuel) FuelRegistry.INSTANCE.add(block, 300);
+
+        Registry.register(Registry.BLOCK, id, craftingTable);
+        Registry.register(Registry.ITEM, id, new BlockItem(craftingTable, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        if (fuel)
+            FuelRegistry.INSTANCE.add(craftingTable, 300);
+
     }
 }
