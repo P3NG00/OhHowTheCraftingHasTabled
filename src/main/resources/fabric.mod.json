@@ -7,6 +7,9 @@
   "authors": [
     "P3NG00"
   ],
+  "contributors": [
+    "ConfusedGryphon (Textures)"
+  ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/oh-how-the-crafting-has-tabled",
     "sources": "https://github.com/P3NG00/MoreCraftingTables",
@@ -27,5 +30,11 @@
     "fabricloader": ">=0.9.0",
     "fabric": "*",
     "minecraft": "1.16.x"
+  },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": 398079
+    }
   }
 }
